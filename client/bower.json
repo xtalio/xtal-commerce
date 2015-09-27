@@ -1,0 +1,30 @@
+{
+  "name": "xtal-commerce",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xtalio/xtal-commerce",
+  "authors": [
+    "Alex Albino <webmaster@alexventure.com>"
+  ],
+  "description": "ES6 based e-commerce platform",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "node.js",
+    "ecommerce",
+    "es6",
+    "io.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
