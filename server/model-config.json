@@ -101,5 +101,11 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Notify": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

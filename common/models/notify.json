@@ -1,0 +1,37 @@
+{
+  "name": "Notify",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "index": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "item": {
+      "type": "Item",
+      "index": true
+    },
+    "is_mailing_list": {
+      "type": "boolean",
+      "index": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
