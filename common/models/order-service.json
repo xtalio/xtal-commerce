@@ -1,0 +1,45 @@
+{
+  "name": "OrderService",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order": {
+      "type": "Order",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "service": {
+      "type": "Service",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "units": {
+      "type": "number",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "end_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

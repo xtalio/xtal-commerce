@@ -107,5 +107,95 @@
     "public": true,
     "$promise": {},
     "$resolved": true
+  },
+  "Order": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Status": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OrderStatus": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OrderCoupon": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OrderItem": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PackageLevel": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Service": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ServiceCoupon": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ServicePackageLevel": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OrderService": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Subscription": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "SubscriptionCoupon": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "SubscriptionPackageLevel": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "SubscriptionService": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "OrderSubscription": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

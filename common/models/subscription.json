@@ -1,0 +1,72 @@
+{
+  "name": "Subscription",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currency": {
+      "type": "Currency",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "terms": {
+      "type": "string",
+      "required": true
+    },
+    "signup_fee_amount": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "is_recurring": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "recurs_every_amount": {
+      "type": "number",
+      "required": false,
+      "index": true
+    },
+    "recurs_every_unit": {
+      "type": "string",
+      "index": true
+    },
+    "recurs_max_amount": {
+      "type": "number",
+      "index": true
+    },
+    "price_per_unit": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "available_date": {
+      "type": "date",
+      "required": false,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

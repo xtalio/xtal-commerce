@@ -1,0 +1,42 @@
+{
+  "name": "OrderSubscription",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order": {
+      "type": "Order",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "subscription": {
+      "type": "Subscription",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "subscription_price": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "subscription_start_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "subscription_end_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

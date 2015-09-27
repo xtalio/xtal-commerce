@@ -1,0 +1,27 @@
+{
+  "name": "ServiceCoupon",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "coupon": {
+      "type": "Coupon",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "service": {
+      "type": "Service",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

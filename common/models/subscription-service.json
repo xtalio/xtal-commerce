@@ -1,0 +1,27 @@
+{
+  "name": "SubscriptionService",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "subscription": {
+      "type": "Subscription",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "service": {
+      "type": "Service",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Service",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currency": {
+      "type": "Currency",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "requires_subscription": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "terms": {
+      "type": "string",
+      "required": true
+    },
+    "price_per_unit": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "unit_of_measure": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "unit_amount": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "is_on_site": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "is_available": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "available_date": {
+      "type": "date",
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

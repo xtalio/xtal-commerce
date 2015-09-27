@@ -1,0 +1,25 @@
+{
+  "name": "OrderCoupon",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "order": {
+      "type": "Order",
+      "id": true,
+      "index": true
+    },
+    "coupon": {
+      "type": "Coupon",
+      "id": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

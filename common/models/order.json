@@ -1,0 +1,92 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "amount_total": {
+      "type": "number",
+      "required": true
+    },
+    "ip": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "order_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "address1": {
+      "type": "string",
+      "required": true
+    },
+    "address2": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "state": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "postal_code": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "phone1": {
+      "type": "string",
+      "required": true
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "created_by": {
+      "type": "Author",
+      "index": true
+    },
+    "modified_by": {
+      "type": "Author",
+      "index": true
+    },
+    "currency": {
+      "type": "Currency",
+      "required": true,
+      "index": true
+    },
+    "merchant_data": {
+      "type": "string",
+      "index": false
+    },
+    "merchant_gateway": {
+      "type": "MerchantGateway",
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

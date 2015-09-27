@@ -1,0 +1,27 @@
+{
+  "name": "ServicePackageLevel",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "service": {
+      "type": "Service",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "package_level": {
+      "type": "PackageLevel",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

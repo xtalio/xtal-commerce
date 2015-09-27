@@ -1,0 +1,29 @@
+{
+  "name": "OrderStatus",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "change_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "status": {
+      "type": "Status",
+      "id": true
+    },
+    "order": {
+      "type": "Order",
+      "id": true,
+      "index": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

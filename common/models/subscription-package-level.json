@@ -1,0 +1,27 @@
+{
+  "name": "SubscriptionPackageLevel",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "subscription": {
+      "type": "Subscription",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "package_level": {
+      "type": "PackageLevel",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
