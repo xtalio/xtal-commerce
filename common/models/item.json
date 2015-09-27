@@ -1,0 +1,118 @@
+{
+  "name": "Item",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "price": {
+      "type": "number",
+      "required": true,
+      "index": true
+    },
+    "currency": {
+      "type": "Currency",
+      "id": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "sku": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "availability_date": {
+      "type": "date",
+      "required": true,
+      "index": true
+    },
+    "category": {
+      "type": "Category",
+      "id": true,
+      "required": true
+    },
+    "max_purchase_amount": {
+      "type": "number"
+    },
+    "metric_unit_of_measure": {
+      "type": "string",
+      "index": true
+    },
+    "metric_width": {
+      "type": "number",
+      "index": true
+    },
+    "metric_height": {
+      "type": "number",
+      "index": true
+    },
+    "metric_depth": {
+      "type": "number",
+      "index": true
+    },
+    "finite_amount_available": {
+      "type": "number",
+      "index": true
+    },
+    "finite_unit_of_measure": {
+      "type": "string",
+      "index": true
+    },
+    "min_purchase_amount": {
+      "type": "string"
+    },
+    "perishable_date": {
+      "type": "date",
+      "index": true
+    },
+    "weight": {
+      "type": "number",
+      "required": false,
+      "index": true
+    },
+    "weight_unit_of_measure": {
+      "type": "string",
+      "required": false,
+      "index": true
+    },
+    "is_available": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "is_finite": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "is_perishable": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "is_tangible": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

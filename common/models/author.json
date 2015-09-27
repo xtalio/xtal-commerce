@@ -1,0 +1,14 @@
+{
+  "name": "Author",
+  "plural": "Authors",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ItemProperty",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "item": {
+      "type": "Item",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "property": {
+      "type": "Property",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

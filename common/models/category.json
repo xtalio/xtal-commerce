@@ -1,0 +1,34 @@
+{
+  "name": "Category",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "index": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "parent": {
+      "type": "Category",
+      "id": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

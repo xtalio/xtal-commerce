@@ -1,0 +1,49 @@
+{
+  "name": "Page",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "index": true
+    },
+    "is_active": {
+      "type": "boolean",
+      "required": true,
+      "index": false
+    },
+    "excerpt": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "Category",
+      "id": true,
+      "required": true,
+      "index": false
+    },
+    "author": {
+      "type": "Author",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

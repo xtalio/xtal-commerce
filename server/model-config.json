@@ -31,5 +31,75 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Item": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Currency": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Category": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Page": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Author": {
+    "dataSource": "xtalcom",
+    "public": true
+  },
+  "Coupon": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ItemCoupon": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Property": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PropertyType": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PropertyValue": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ItemProperty": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "MerchantGateway": {
+    "dataSource": "xtalcom",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

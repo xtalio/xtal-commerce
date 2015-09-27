@@ -1,0 +1,30 @@
+{
+  "name": "Coupon",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "start_date": {
+      "type": "date",
+      "required": false,
+      "index": true
+    },
+    "end_date": {
+      "type": "string",
+      "index": true
+    },
+    "code": {
+      "type": "string",
+      "id": false,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

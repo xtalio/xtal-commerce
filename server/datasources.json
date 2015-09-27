@@ -2,5 +2,10 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "xtalcom": {
+    "database": "xtalcom",
+    "name": "xtalcom",
+    "connector": "mongodb"
   }
 }

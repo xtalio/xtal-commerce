@@ -1,0 +1,27 @@
+{
+  "name": "ItemCoupon",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "item": {
+      "type": "Item",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "coupon": {
+      "type": "Coupon",
+      "id": true,
+      "required": true,
+      "index": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

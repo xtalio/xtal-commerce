@@ -1,0 +1,25 @@
+{
+  "name": "Currency",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "type": "string",
+      "index": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "is_default": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
