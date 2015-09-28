@@ -8,7 +8,7 @@
   "immed": true,
   "indent": 2,
   "latedef": "nofunc",
-  "newcap": true,
+  "newcap": false,
   "nonew": true,
   "noarg": true,
   "quotmark": "single",
@@ -17,5 +17,16 @@
   "unused": false,
   "trailing": true,
   "sub": true,
-  "maxlen": 80
+  "maxlen": 80,
+
+  "browser": true,
+  "curly": true,
+  "latedef": true,
+  "unused": true,
+  "globals": {
+    "wrap": true,
+    "unwrap": true,
+    "Polymer": true,
+    "Platform": true
+  }
 }

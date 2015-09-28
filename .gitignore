@@ -18,3 +18,9 @@ coverage
 node_modules
 npm-debug.log
 bower_components
+dist
+test/temp
+.sass-cache
+bower_components
+.tmp
+test/bower_components/

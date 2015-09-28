@@ -1,3 +1,6 @@
 {
-  "generator-loopback": {}
+  "generator-loopback": {},
+  "generator-polymer": {
+    "includeSass": true
+  }
 }
