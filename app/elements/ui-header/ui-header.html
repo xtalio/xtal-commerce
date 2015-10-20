@@ -1,0 +1,25 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="ui-header" attributes="">
+  <template>
+    <link rel="stylesheet" href="ui-header.css">
+    
+    <paper-material elevation="1"></paper-material>
+
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        ready: function () {
+          this.items = [
+            'HTML5 Boilerplate',
+            'Web Component Polyfills',
+            'Core Elements',
+            'Paper Elements',
+            'Polymer'
+          ];
+        }
+      });
+    })();
+  </script>
+</polymer-element>

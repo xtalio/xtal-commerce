@@ -33,6 +33,6 @@
     "web-component-tester": "Polymer/web-component-tester#^2.2.3"
   },
   "resolutions": {
-    "webcomponentsjs": "0.7.13"
+    "webcomponentsjs": "0.7.15"
   }
 }
