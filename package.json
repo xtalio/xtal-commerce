@@ -45,6 +45,7 @@
     "jshint-stylish": "^0.4.0",
     "merge-stream": "^0.1.6",
     "opn": "^1.0.0",
+    "polybuild": "^1.0.5",
     "psi": "^1.0.4",
     "require-dir": "^0.1.0",
     "run-sequence": "^0.3.6",
@@ -57,5 +58,16 @@
   "description": "xtal-commerce",
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "bundleDependencies": [
+    "compression",
+    "cors",
+    "errorhandler",
+    "loopback",
+    "loopback-boot",
+    "loopback-connector-mongodb",
+    "loopback-datasource-juggler",
+    "loopback-explorer",
+    "serve-favicon"
+  ]
 }
