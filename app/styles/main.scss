@@ -1,5 +1,12 @@
+$theme-color: #331836;
+$theme-color-panel: #ffffff;
+$theme-color-panel-background: darken($theme-color-panel, 7.5%);/*#ececec;*/
+$theme-sidebar-item-background-color: $theme-color-panel;
+
+$theme-sidebar-item-color: #a789aa;
+
 body {
-  background: #ececec;
+  background: $theme-color-panel-background;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
@@ -29,69 +36,46 @@ body {
 }
 
 [drawer] {
-  background-color: #ffffff;
+  background-color: $theme-color-panel;
 }
 
 core-toolbar {
   color: #ffffff;
-  background-color: #331836;
+  background-color: $theme-color;
 }
 
 core-toolbar.side {
-  color: #331836;
-  background-image: linear-gradient(90deg, #ececec 70px, #ececec 256px, #331836 256px);
+  color: $theme-color;
+  background-image: linear-gradient(90deg, $theme-color-panel-background 70px, $theme-color-panel-background 256px, $theme-color 256px);
 
   padding-left: 72px;
 }
 
 core-toolbar.main {
-  min-height: 350px;
-  padding-left: 30px;
 
   .app-name {
-    font-size: 2em;
-    margin-left: 370px;
-    margin-top: 150px;
-  }
-
-  paper-material.round-image {
-    width: 300px;
-    height: 300px;
-
-    position: relative;
-    top: 140px;
-    border-radius: 150px;
-
-    background-color: #ffffff;
-
-
-    .round-image-inner {
-      width: 290px;
-      height: 290px;
-      position: relative;
-      left: 5px;
-      top: 5px;
-      
-      border-radius: 145px;
-      background-image: url('/images/Imuduino-Yardstick-4mm.png');
-      background-position: 1067px 713px;
-    }
+    font-size: 1.2em;
   }
 }
 
-core-menu {
+core-menu.side {
   margin: 0;
 
   core-item {
 
     background-color: #ffffff;
-    background-image: linear-gradient(90deg, #a789aa 70px, transparent 70px, transparent 250px, #a789aa 250px);
+    background-image: linear-gradient(90deg, $theme-sidebar-item-color 70px, $theme-sidebar-item-background-color 70px, $theme-sidebar-item-background-color 97%, $theme-sidebar-item-color 97%);
 
-    padding-left: 72px;
+    padding-left: 80px;
   }
 
   core-item.core-selected {
-    background-image: linear-gradient(90deg, #c990d0 70px, transparent 70px, transparent 250px, #c990d0 250px);
+    background-image: linear-gradient(
+      90deg, 
+      darken($theme-sidebar-item-color, 7.5%) 70px, 
+      $theme-sidebar-item-background-color 70px, 
+      $theme-sidebar-item-background-color 97%, 
+      darken($theme-sidebar-item-color, 7.5%) 97%);
   }
   
 }
