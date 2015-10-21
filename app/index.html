@@ -40,9 +40,12 @@
       margin-right: auto;
     }
     paper-card {
-      width: 100%;
+      min-width: 250px;
+      max-width: 100%;
       margin-bottom: 16px;
     }
+
+
     .avatar {
       display: inline-block;
       height: 64px;
@@ -136,14 +139,16 @@
         <!-- <paper-toolbar class="category">
           <div class="middle indent">Category 1</div>
         </paper-toolbar> -->
-        <div class="layout horizontal wrap storefront">
-          <paper-card class="layout flex" heading="Example Item">
+        <div class="horizontal layout wrap storefront">
+
+          <paper-card class="flex-2" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
             </div>
           </paper-card>
-          <paper-card heading="Titles AND images!" class="layout flex-5 pink"
+
+          <paper-card heading="Titles AND images!" class="flex-8 pink"
                 image="http://placehold.it/350x150">
             <div class="card-content">
               Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
@@ -153,7 +158,8 @@
               <paper-button>Yes</paper-button>
             </div>
           </paper-card>
-          <paper-card class="layout flex" heading="Example Item">
+
+          <paper-card class="flex-2" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
@@ -167,9 +173,9 @@
         <!-- <paper-toolbar class="category">
           <div class="middle indent">Category 2</div>
         </paper-toolbar> -->
-        <div class="layout horizontal wrap storefront">
+        <div class="horizontal layout wrap storefront">
 
-          <paper-card class="layout flex-1 fancy">
+          <paper-card class="flex-1 fancy">
             <div class="card-content">
               <div class="avatar">:)</div>
               <div class="title">
@@ -188,13 +194,13 @@
             </div>
           </paper-card>
 
-          <paper-card class="layout flex-3" heading="Example Item">
+          <paper-card class="flex-3" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
             </div>
           </paper-card>
-          <paper-card class="layout flex" heading="Example Item">
+          <paper-card class="flex" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
