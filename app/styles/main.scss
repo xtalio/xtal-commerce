@@ -1,6 +1,6 @@
 $theme-color: #331836;
 $theme-color-panel: #ffffff;
-$theme-color-panel-background: darken($theme-color-panel, 7.5%);/*#ececec;*/
+$theme-color-panel-background: darken($theme-color-panel, 7.5%);
 $theme-sidebar-item-background-color: $theme-color-panel;
 
 $theme-sidebar-item-color: #a789aa;
@@ -39,29 +39,29 @@ body {
   background-color: $theme-color-panel;
 }
 
-core-toolbar {
+paper-toolbar {
   color: #ffffff;
   background-color: $theme-color;
 }
 
-core-toolbar.side {
+paper-toolbar.side {
   color: $theme-color;
   background-image: linear-gradient(90deg, $theme-color-panel-background 70px, $theme-color-panel-background 256px, $theme-color 256px);
 
   padding-left: 72px;
 }
 
-core-toolbar.main {
-
+paper-toolbar.main {
+  background-color: $theme-color;
   .app-name {
-    font-size: 1.2em;
+    
   }
 }
 
-core-menu.side {
-  margin: 0;
+paper-menu.side {
+  margin: -8px 0 0 0;
 
-  core-item {
+  paper-item {
 
     background-color: #ffffff;
     background-image: linear-gradient(90deg, $theme-sidebar-item-color 70px, $theme-sidebar-item-background-color 70px, $theme-sidebar-item-background-color 97%, $theme-sidebar-item-color 97%);
@@ -69,7 +69,7 @@ core-menu.side {
     padding-left: 80px;
   }
 
-  core-item.core-selected {
+  paper-item.iron-selected {
     background-image: linear-gradient(
       90deg, 
       darken($theme-sidebar-item-color, 7.5%) 70px, 

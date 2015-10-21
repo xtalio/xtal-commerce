@@ -43,28 +43,30 @@
       <paper-header-panel drawer="">
 
         <!-- Drawer Toolbar -->
-        <paper-toolbar class="side">Menu</paper-toolbar>
+        <paper-toolbar class="side">
+          <div class="middle title">Menu</div>
+        </paper-toolbar>
 
         <!-- Drawer Content -->
         <paper-menu class="side" selected="0">
-          <paper-item undefined="Top"></paper-item>
-          <paper-item undefined="Appliances"></paper-item>
-          <paper-item undefined="Bathroom"></paper-item>
-          <paper-item undefined="Building Supplies"></paper-item>
-          <paper-item undefined="Electrical"></paper-item>
-          <paper-item undefined="Flooring"></paper-item>
-          <paper-item undefined="Hardware"></paper-item>
-          <paper-item undefined="Heating and Cooling"></paper-item>
-          <paper-item undefined="Automation/Security"></paper-item>
-          <paper-item undefined="Home Decor"></paper-item>
-          <paper-item undefined="Kitchen"></paper-item>
-          <paper-item undefined="Lighting/Ceiling Fans"></paper-item>
-          <paper-item undefined="Outdoors"></paper-item>
-          <paper-item undefined="Paint"></paper-item>
-          <paper-item undefined="Plumbing"></paper-item>
-          <paper-item undefined="Storage/Organization"></paper-item>
-          <paper-item undefined="Tools"></paper-item>
-          <paper-item undefined="Windows/Doors"></paper-item>
+          <paper-item>Top</paper-item>
+          <paper-item>Appliances</paper-item>
+          <paper-item>Bathroom</paper-item>
+          <paper-item>Building Supplies</paper-item>
+          <paper-item>Electrical</paper-item>
+          <paper-item>Flooring</paper-item>
+          <paper-item>Hardware</paper-item>
+          <paper-item>Heating and Cooling</paper-item>
+          <paper-item>Automation/Security</paper-item>
+          <paper-item>Home Decor</paper-item>
+          <paper-item>Kitchen</paper-item>
+          <paper-item>Lighting/Ceiling Fans</paper-item>
+          <paper-item>Outdoors</paper-item>
+          <paper-item>Paint</paper-item>
+          <paper-item>Plumbing</paper-item>
+          <paper-item>Storage/Organization</paper-item>
+          <paper-item>Tools</paper-item>
+          <paper-item>Windows/Doors</paper-item>
         </paper-menu>
 
       </paper-header-panel>
@@ -74,8 +76,8 @@
 
         <!-- Main Toolbar -->
         <paper-toolbar class="main tall">
-          <paper-icon-button icon="menu" core-drawer-toggle=""></paper-icon-button>
-          <div class="middle indent app-name"><h1>{{appName}}</h1></div>
+          <paper-icon-button icon="menu" paper-drawer-toggle=""></paper-icon-button>
+          <div class="middle indent title app-name"><h1>{{appName}}</h1></div>
           
         </paper-toolbar>
 
@@ -85,8 +87,8 @@
           <p>You now have</p>
           <yo-list></yo-list>
         </div> -->
-      
-    </paper-scroll-header-panel></paper-drawer-panel>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
 
   </template>
 
