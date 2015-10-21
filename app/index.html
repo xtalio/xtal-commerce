@@ -30,6 +30,51 @@
       margin: 0;
       height:100vh;
     }
+
+
+    #cards {
+      @apply(--layout-vertical);
+      @apply(--center-justified);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .avatar {
+      display: inline-block;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background: var(--paper-pink-500);
+      color: white;
+      line-height: 64px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .fancy .title {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+      color: var(--paper-indigo-500);
+    }
+    .fancy img {
+      width: 100%;
+    }
+    .fancy .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+    .fancy .medium {
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+    .pink {
+      --paper-card-header-color: var(--paper-pink-500);
+    }
   </style>
   <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
 </head>
@@ -72,13 +117,12 @@
       </paper-header-panel>
 
       <!-- Main -->
-      <paper-scroll-header-panel main="">
+      <paper-header-panel main="">
 
         <!-- Main Toolbar -->
-        <paper-toolbar class="main tall">
+        <paper-toolbar class="main">
           <paper-icon-button icon="menu" paper-drawer-toggle=""></paper-icon-button>
-          <div class="middle indent title app-name"><h1>{{appName}}</h1></div>
-          
+          <div class="middle indent title app-name">{{appName}}</div>
         </paper-toolbar>
 
         <!-- Main Content -->
@@ -88,29 +132,79 @@
           <yo-list></yo-list>
         </div> -->
 
-        
+        <!-- Example Category 1 BOD -->
+        <!-- <paper-toolbar class="category">
+          <div class="middle indent">Category 1</div>
+        </paper-toolbar> -->
         <div class="layout horizontal wrap storefront">
-          <paper-card heading="Example Item">
+          <paper-card class="layout flex" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
             </div>
           </paper-card>
-          <paper-card heading="Example Item">
+          <paper-card heading="Titles AND images!" class="layout flex-5 pink"
+                image="http://placehold.it/350x150">
+            <div class="card-content">
+              Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+            </div>
+            <div class="card-actions">
+              <paper-button>No</paper-button>
+              <paper-button>Yes</paper-button>
+            </div>
+          </paper-card>
+          <paper-card class="layout flex" heading="Example Item">
             <div class="card-content">Some content.</div>
             <div class="card-actions">
               <paper-button>Some Action</paper-button>
             </div>
           </paper-card>
-          <paper-card heading="Example Item">
-            <div class="card-content">Some content.</div>
-            <div class="card-actions">
-              <paper-button>Some Action</paper-button>
-            </div>
-          </paper-card>
+          
         </div>
+        <!-- Example Category 1 EOD -->
+
+        <!-- Example Category 2 BOD -->
+        <!-- <paper-toolbar class="category">
+          <div class="middle indent">Category 2</div>
+        </paper-toolbar> -->
+        <div class="layout horizontal wrap storefront">
+
+          <paper-card class="layout flex-1 fancy">
+            <div class="card-content">
+              <div class="avatar">:)</div>
+              <div class="title">
+                <div class="medium">Title</div>
+                <div class="small">subtitle</div>
+              </div>
+            </div>
+
+            <!-- take this out of the content class so that it can span the whole card -->
+            <img src="http://placehold.it/350x150">
+
+            <div class="card-content">
+              <div class="big">Usu eu novum principes, vel quodsi aliquip ea.</div>
+              <div class="medium">Ut labores minimum atomorum pro. Laudem tibique ut has.</div>
+              <div class="small">Usu eu novum principes, vel quodsi aliquip ea.</div>
+            </div>
+          </paper-card>
+
+          <paper-card class="layout flex-3" heading="Example Item">
+            <div class="card-content">Some content.</div>
+            <div class="card-actions">
+              <paper-button>Some Action</paper-button>
+            </div>
+          </paper-card>
+          <paper-card class="layout flex" heading="Example Item">
+            <div class="card-content">Some content.</div>
+            <div class="card-actions">
+              <paper-button>Some Action</paper-button>
+            </div>
+          </paper-card>
+          
+        </div>
+        <!-- Example Category 2 EOD -->
         
-      </paper-scroll-header-panel>
+      </paper-header-panel>
     </paper-drawer-panel>
 
   </template>

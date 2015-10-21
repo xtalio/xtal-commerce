@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
+
 $theme-color: #331836;
 $theme-color-panel: #ffffff;
 $theme-color-panel-background: darken($theme-color-panel, 7.5%);
@@ -7,7 +9,7 @@ $theme-sidebar-item-color: #a789aa;
 
 body {
   background: $theme-color-panel-background;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
 }
 
@@ -57,9 +59,21 @@ paper-toolbar.side {
 
 paper-toolbar.main {
   background-color: $theme-color;
+  background-position: 0px 0px;
   .app-name {
     
   }
+}
+
+paper-toolbar.category {
+  margin: 15px 0 0 0;
+  background-color: transparent;
+  color: darken($theme-color-panel-background, 30%);
+  font-size: 1.4em;
+}
+
+paper-toolbar.featured-category {
+  background-color: darken($theme-color-panel-background, 40%);
 }
 
 paper-menu.side {
