@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="loopback-client">
+  <template>
+    <ul>
+      <template is="dom-repeat" items="{{items}}" as="item" id="loopback_data">
+        <li>{{ item }}</li>
+      </template>
+    </ul>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        is: 'loopback-client',
+        ready: function () {
+          this.items = [
+            'HTML5 Boilerplate',
+            'Web Component Polyfills',
+            'Core Elements',
+            'Paper Elements',
+            'Polymer'
+          ];
+        }
+      });
+    }());
+  </script>
+</dom-module>

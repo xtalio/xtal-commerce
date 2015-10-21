@@ -6,7 +6,7 @@ Requires the Strongloop loopback cli tool. Xtal Commerce development is done in 
 
 - Strongloop Loopback cli tool
 - Ruby SASS gem
-- IO.js v3.3.1 or higher
+- Node.js v4.0.0 or higher
 - Gulp npm package
 - Bower
 - Browser Sync
@@ -18,16 +18,10 @@ To setup, run this from the base directory after installing all requirements:
 npm install
 bower install
 gulp
-slc arc
-
-# In a seperate terminal...
-slc start
+gulp serve
 ```
 
-Using StrongLoop Arc, click on Process Manager. Add 'localhost' with port '8701' to 
-the Process Manager list.
-
-Then, access the following address using your favorite browser:
+Your local instance should now be available at:
 
 ```
 # Application Front-end
