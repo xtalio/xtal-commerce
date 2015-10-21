@@ -19,6 +19,8 @@
     "loopback-explorer": "^1.1.0"
   },
   "devDependencies": {
+    "web-component-tester": "^3.3.29",
+    "polybuild": "^1.0.5",
     "apache-server-configs": "^2.7.1",
     "browser-sync": "^2.9.6",
     "del": "^0.1.2",
@@ -45,11 +47,9 @@
     "jshint-stylish": "^0.4.0",
     "merge-stream": "^0.1.6",
     "opn": "^1.0.0",
-    "polybuild": "^1.0.5",
     "psi": "^1.0.4",
     "require-dir": "^0.1.0",
-    "run-sequence": "^0.3.6",
-    "web-component-tester": "^2.2.3"
+    "run-sequence": "^0.3.6"
   },
   "repository": {
     "type": "",
@@ -57,7 +57,7 @@
   },
   "description": "xtal-commerce",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "bundleDependencies": [
     "compression",

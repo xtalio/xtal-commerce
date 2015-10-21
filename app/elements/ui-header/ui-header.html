@@ -1,8 +1,8 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<polymer-element name="ui-header" attributes="">
+<dom-module id="ui-header">
+  <link rel="import" type="css" href="ui-header.css">
   <template>
-    <link rel="stylesheet" href="ui-header.css">
     
     <paper-material elevation="1"></paper-material>
 
@@ -10,6 +10,7 @@
   <script>
     (function () {
       Polymer({
+        is: 'ui-header',
         ready: function () {
           this.items = [
             'HTML5 Boilerplate',
@@ -20,6 +21,6 @@
           ];
         }
       });
-    })();
+    }());
   </script>
-</polymer-element>
+</dom-module>

@@ -1,10 +1,10 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
-<polymer-element name="yo-list" attributes="">
+<dom-module id="yo-list">
+  <link rel="import" type="css" href="yo-list.css">
   <template>
-    <link rel="stylesheet" href="yo-list.css">
     <ul>
-      <template id="greeting" repeat="{{ item in items }}">
+      <template is="dom-repeat" items="{{items}}" as="item" id="greeting">
         <li>{{ item }}</li>
       </template>
     </ul>
@@ -12,6 +12,7 @@
   <script>
     (function () {
       Polymer({
+        is: 'yo-list',
         ready: function () {
           this.items = [
             'HTML5 Boilerplate',
@@ -22,6 +23,6 @@
           ];
         }
       });
-    })();
+    }());
   </script>
-</polymer-element>
+</dom-module>

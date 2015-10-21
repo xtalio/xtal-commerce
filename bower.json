@@ -25,14 +25,14 @@
     "tests"
   ],
   "dependencies": {
-    "core-elements": "Polymer/core-elements#^0.5.1",
-    "paper-elements": "Polymer/paper-elements#^0.5.1",
-    "polymer": "Polymer/polymer#^0.5.4"
+    "polymer": "Polymer/polymer#^1.1.0",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.4",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.5",
+    "gold-elements": "PolymerElements/gold-elements#~1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0",
+    "platinum-elements": "PolymerElements/platinum-elements#~1.2.0"
   },
   "devDependencies": {
-    "web-component-tester": "Polymer/web-component-tester#^2.2.3"
-  },
-  "resolutions": {
-    "webcomponentsjs": "0.7.15"
+    "web-component-tester": "Polymer/web-component-tester"
   }
 }

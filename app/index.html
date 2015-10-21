@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="">
-
-<head>
+<!DOCTYPE html><html lang=""><head>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,52 +16,68 @@
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
+  <style is="custom-style">
+    /* TODO(polyup): For speed, consider reworking these styles with .classes
+                     and #ids rather than [attributes].
+    */
+    [layout] {
+      @apply(--layout);
+    }
+    [layout][vertical] {
+      @apply(--layout-vertical);
+    }
+    [fullbleed] {
+      margin: 0;
+      height:100vh;
+    }
+  </style>
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
 </head>
 
-<body unresolved fullbleed layout vertical>
-  <template is="auto-binding" id="app">
+<body unresolved="" fullbleed="" layout="" vertical="">
+  <template is="dom-bind" id="app">
 
-    <core-drawer-panel>
+    <paper-drawer-panel>
 
       <!-- Drawer -->
-      <core-header-panel drawer>
+      <paper-header-panel drawer="">
 
         <!-- Drawer Toolbar -->
-        <core-toolbar class="side">Menu</core-toolbar>
+        <paper-toolbar class="side">Menu</paper-toolbar>
 
         <!-- Drawer Content -->
-        <core-menu class="side" selected="0">
-          <core-item label="Top"></core-item>
-          <core-item label="Appliances"></core-item>
-          <core-item label="Bathroom"></core-item>
-          <core-item label="Building Supplies"></core-item>
-          <core-item label="Electrical"></core-item>
-          <core-item label="Flooring"></core-item>
-          <core-item label="Hardware"></core-item>
-          <core-item label="Heating and Cooling"></core-item>
-          <core-item label="Automation/Security"></core-item>
-          <core-item label="Home Decor"></core-item>
-          <core-item label="Kitchen"></core-item>
-          <core-item label="Lighting/Ceiling Fans"></core-item>
-          <core-item label="Outdoors"></core-item>
-          <core-item label="Paint"></core-item>
-          <core-item label="Plumbing"></core-item>
-          <core-item label="Storage/Organization"></core-item>
-          <core-item label="Tools"></core-item>
-          <core-item label="Windows/Doors"></core-item>
-        </core-menu>
+        <paper-menu class="side" selected="0">
+          <paper-item undefined="Top"></paper-item>
+          <paper-item undefined="Appliances"></paper-item>
+          <paper-item undefined="Bathroom"></paper-item>
+          <paper-item undefined="Building Supplies"></paper-item>
+          <paper-item undefined="Electrical"></paper-item>
+          <paper-item undefined="Flooring"></paper-item>
+          <paper-item undefined="Hardware"></paper-item>
+          <paper-item undefined="Heating and Cooling"></paper-item>
+          <paper-item undefined="Automation/Security"></paper-item>
+          <paper-item undefined="Home Decor"></paper-item>
+          <paper-item undefined="Kitchen"></paper-item>
+          <paper-item undefined="Lighting/Ceiling Fans"></paper-item>
+          <paper-item undefined="Outdoors"></paper-item>
+          <paper-item undefined="Paint"></paper-item>
+          <paper-item undefined="Plumbing"></paper-item>
+          <paper-item undefined="Storage/Organization"></paper-item>
+          <paper-item undefined="Tools"></paper-item>
+          <paper-item undefined="Windows/Doors"></paper-item>
+        </paper-menu>
 
-      </core-header-panel>
+      </paper-header-panel>
 
       <!-- Main -->
-      <core-scroll-header-panel main>
+      <paper-scroll-header-panel main="">
 
         <!-- Main Toolbar -->
-        <core-toolbar class="main tall">
-          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+        <paper-toolbar class="main tall">
+          <paper-icon-button icon="menu" core-drawer-toggle=""></paper-icon-button>
           <div class="middle indent app-name"><h1>{{appName}}</h1></div>
           
-        </core-toolbar>
+        </paper-toolbar>
 
         <!-- Main Content -->
         <!-- <div class="hero-unit">
@@ -72,14 +85,14 @@
           <p>You now have</p>
           <yo-list></yo-list>
         </div> -->
-      </core-header-panel>
-    </core-drawer-panel>
+      
+    </paper-scroll-header-panel></paper-drawer-panel>
 
   </template>
 
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->
-</body>
 
-</html>
+
+
