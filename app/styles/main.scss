@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Roboto");
 
-$theme-color: #331836;
+$theme-color: #e91e63;
 $theme-color-panel: #ffffff;
 $theme-color-panel-background: darken($theme-color-panel, 7.5%);
 $theme-sidebar-item-background-color: $theme-color-panel;
-
-$theme-sidebar-item-color: #a789aa;
+$theme-sidebar-item-color: lighten($theme-color, 30%);
 
 body {
   background: $theme-color-panel-background;
